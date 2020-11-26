@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="All(failed)">
+    <classes>
+      <class name="BOM.valetParking">
+        <methods>
+          <include name="ChooseaParkingLot04"/>
+          <include name="teardown"/>
+          <include name="ChooseaParkingLot03"/>
+          <include name="setUp"/>
+          <include name="ChooseaParkingLot05"/>
+        </methods>
+      </class> <!-- BOM.valetParking -->
+      <class name="BOM.EconomyLotParking">
+        <methods>
+          <include name="teardown"/>
+          <include name="ChooseaParkingLot05"/>
+          <include name="setUp"/>
+          <include name="ChooseaParkingLot04"/>
+          <include name="ChooseaParkingLot03"/>
+        </methods>
+      </class> <!-- BOM.EconomyLotParking -->
+      <class name="BOM.ShortTermParking">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="ChooseaParkingLot05"/>
+          <include name="ChooseaParkingLot03"/>
+          <include name="ChooseaParkingLot04"/>
+        </methods>
+      </class> <!-- BOM.ShortTermParking -->
+      <class name="BOM.LongTermGarageParking">
+        <methods>
+          <include name="ChooseaParkingLot04"/>
+          <include name="ChooseaParkingLot03"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="ChooseaParkingLot05"/>
+        </methods>
+      </class> <!-- BOM.LongTermGarageParking -->
+      <class name="BOM.LongTermSurfaceParking">
+        <methods>
+          <include name="ChooseaParkingLot05"/>
+          <include name="teardown"/>
+          <include name="ChooseaParkingLot03"/>
+          <include name="setUp"/>
+          <include name="ChooseaParkingLot04"/>
+        </methods>
+      </class> <!-- BOM.LongTermSurfaceParking -->
+    </classes>
+  </test> <!-- All(failed) -->
+</suite> <!-- Failed suite [Suite] -->
